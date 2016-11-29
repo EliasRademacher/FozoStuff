@@ -16,6 +16,8 @@ public class Account {
 
     private String userId;
 
+    private String password;
+
     public Account() {
     }
 
@@ -25,6 +27,14 @@ public class Account {
 
     public String getUserId() {
         return userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public List<Key> getChallengesCompleted() {
