@@ -20,6 +20,10 @@ public class Response {
         this.errors = errors;
     }
 
+    public Response(String message) {
+        this.message = message;
+    }
+
     public Response(String message, Object payload) {
         this.message = message;
         this.payload = payload;
