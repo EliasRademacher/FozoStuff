@@ -13,6 +13,17 @@ public class Response {
 
     private Object payload;
 
+    public Response() {
+    }
+
+    public Response(List<String> errors) {
+        this.errors = errors;
+    }
+
+    public Response(String message, Object payload) {
+        this.message = message;
+        this.payload = payload;
+    }
 
     public List<String> getErrors() {
         return errors;
