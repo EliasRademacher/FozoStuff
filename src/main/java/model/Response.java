@@ -29,7 +29,13 @@ public class Response {
         this.payload = payload;
     }
 
-    public List<String> getErrors() {
+    public Response(List<String> errors, String message, Object payload) {
+	this.errors = errors;
+        this.message = message;
+        this.payload = payload;
+    }
+
+   public List<String> getErrors() {
         return errors;
     }
 
